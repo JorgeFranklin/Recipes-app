@@ -1,0 +1,74 @@
+.markdown-view h1 {
+  @apply font-bold text-4xl mb-2;
+}
+
+.markdown-view h2 {
+  @apply font-bold text-3xl mb-2;
+}
+
+.markdown-view h3 {
+  @apply font-bold text-2xl mb-2;
+}
+
+.markdown-view h4 {
+  @apply font-bold text-xl mb-2;
+}
+
+.markdown-view h5 {
+  @apply font-bold text-lg mb-2;
+}
+
+.markdown-view h6 {
+  @apply font-bold text-base mb-2;
+}
+
+.markdown-view ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.markdown-view li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin-bottom: 10px;
+}
+
+.markdown-view li::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+.markdown-view ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.markdown-view a {
+  @apply text-blue-600 hover:underline;
+}
+
+.markdown-view p {
+  @apply text-2xl max-md:text-xl;
+  margin-bottom: 36px;
+}
+
+.markdown-view {
+  @apply text-white;
+}

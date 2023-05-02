@@ -1,0 +1,59 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(uuid())
+  name      String
+  image     String    @db.LongText
+  email     String    @unique
+  createdAt DateTime  @default(now())
+  recipes   Recipe[]
+  comments  Comment[]
+}
+
+model Recipe {
+  id         Int        @id @default(autoincrement())
+  image      String     @db.LongText
+  title      String     @db.LongText
+  content    String     @db.LongText
+  author     User       @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId   String
+  createdAt  DateTime   @default(now())
+  categories Category[]
+  comments   Comment[]
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  content   String   @db.LongText
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  String
+  recipe    Recipe   @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  recipeId  Int
+  createdAt DateTime @default(now())
+}
+
+enum CategoryName {
+  breakfast
+  lunch
+  dinner
+  appetizer
+  salad
+  dessert
+  snack
+  soup
+  holiday
+  vegetarian
+}
+
+model Category {
+  id      Int          @id @default(autoincrement())
+  name    CategoryName @unique
+  recipes Recipe[]
+}
