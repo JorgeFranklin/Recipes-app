@@ -2,20 +2,20 @@ import db from '@/src/lib/db'
 import NextAuth, { type NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 
-function getGoogleCredentials() {
-  const clientId = process.env.GOOGLE_CLIENT_ID
-  const clientSecret = process.env.GOOGLE_CLIENT_SECRET
+// function getGoogleCredentials() {
+//   const clientId = process.env.GOOGLE_CLIENT_ID
+//   const clientSecret = process.env.GOOGLE_CLIENT_SECRET
 
-  if (!clientId || clientId.length === 0) {
-    throw new Error('Missing GOOGLE_CLIENT_ID')
-  }
+//   if (!clientId || clientId.length === 0) {
+//     throw new Error('Missing GOOGLE_CLIENT_ID')
+//   }
 
-  if (!clientSecret || clientSecret.length === 0) {
-    throw new Error('Missing GOOGLE_CLIENT_SECRET')
-  }
+//   if (!clientSecret || clientSecret.length === 0) {
+//     throw new Error('Missing GOOGLE_CLIENT_SECRET')
+//   }
 
-  return { clientId, clientSecret }
-}
+//   return { clientId, clientSecret }
+// }
 
 export const authOptions: NextAuthOptions = {
   pages: {
@@ -24,8 +24,8 @@ export const authOptions: NextAuthOptions = {
 
   providers: [
     GoogleProvider({
-      clientId: getGoogleCredentials().clientId,
-      clientSecret: getGoogleCredentials().clientSecret,
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
       checks: 'none',
     }),
   ],
