@@ -10,11 +10,11 @@ import { Heading } from '@/src/components/ui/Heading'
 const SignIn = () => {
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleSignIn = () => {
+  const handleSignIn = async () => {
     try {
       setIsLoading(true)
 
-      signIn('google')
+      await signIn('google')
     } catch (error) {
       console.log('sign in error:', error)
     } finally {
