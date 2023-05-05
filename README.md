@@ -1,3 +1,6 @@
+<img src="https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png" width="30" height="30"/>
+<img src="https://user-images.githubusercontent.com/118635631/236372351-8b73ba9c-b94b-4164-a5ee-a4cd41915e64.png" width="30" height="30"/>
+
 # Fullstack recipes app built using TypeScript, Next 13, Next Auth, TailwindCSS, GraphQL, Prisma, Apollo Client, Apollo Server
 
 This is a Full Stack Project built using ***TypeScript, Next 13, Apollo-Client, TailwindCSS*** in frontend and using ***GraphQL, Apollo-Server, Prisma & MySQL*** in backend.
