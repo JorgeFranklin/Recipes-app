@@ -5,6 +5,7 @@
   <img src="https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png" width="100" height="100"/>
   <img src="https://user-images.githubusercontent.com/118635631/236372351-8b73ba9c-b94b-4164-a5ee-a4cd41915e64.png" width="100" height="100"/>
   <img src="https://user-images.githubusercontent.com/118635631/236373783-35b97cd7-95a2-40b9-bb87-62aa558faa48.png" width="100" height="100">
+  <img src="https://user-images.githubusercontent.com/118635631/236376245-9dffb725-6e54-4013-a1bc-99cba649618a.png" width="87" height="100">
 </h1>
 
 # Fullstack recipes app built using TypeScript, Next 13, Next Auth, TailwindCSS, GraphQL, Prisma, Apollo Client, Apollo Server
