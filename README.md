@@ -1,13 +1,19 @@
-<img src="https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png" width="30" height="30"/>
-<img src="https://user-images.githubusercontent.com/118635631/236372351-8b73ba9c-b94b-4164-a5ee-a4cd41915e64.png" width="30" height="30"/>
+<h1 align="center">
+  <img height="150" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript" />
+  <img height="150" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS" />
+  <img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" width="150" height="150" />
+  <img src="https://user-images.githubusercontent.com/25181517/192107856-aa92c8b1-b615-47c3-9141-ed0d29a90239.png" width="150" height="150"/>
+  <img src="https://user-images.githubusercontent.com/118635631/236372351-8b73ba9c-b94b-4164-a5ee-a4cd41915e64.png" width="150" height="150"/>
+  <img src="https://user-images.githubusercontent.com/118635631/236373783-35b97cd7-95a2-40b9-bb87-62aa558faa48.png" width="150" height="150">
+</h1>
 
 # Fullstack recipes app built using TypeScript, Next 13, Next Auth, TailwindCSS, GraphQL, Prisma, Apollo Client, Apollo Server
 
-This is a Full Stack Project built using ***TypeScript, Next 13, Apollo-Client, TailwindCSS*** in frontend and using ***GraphQL, Apollo-Server, Prisma & MySQL*** in backend.
+This is a Full Stack Project built using ***TypeScript, Next 13, Next Auth, Apollo-Client, TailwindCSS*** in frontend and using ***GraphQL, Apollo-Server, Prisma & MySQL*** in backend.
 
 The project is a "social network" of recipes, you can see the profile of other users and also their recipes, you can comment on recipes, create and delete your recipes and also search for recipes.
 
-***You can take a look at the project*** [here](https://recipe-app-portfolio.netlify.app).
+### **You can take a look at the project** [here](https://recipe-app-portfolio.netlify.app).
 
 # Table of contents
 
