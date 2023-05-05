@@ -18,13 +18,17 @@ The project is a "social network" of recipes, you can see the profile of other u
   
   - [Account](#account)
   
+  - [Profile](#profile)
+  
   - [Search](#search)
   
   - [Results](#results)
   
   - [Discover](#discover)
   
-- Technologies used
+  - [Category](#category)
+  
+- [Technologies used](#technologies-used)
 
 # Project walk-through
 
@@ -51,3 +55,63 @@ This page is where we can see the recipe author and the recipe details, such as 
 ![image](https://user-images.githubusercontent.com/118635631/236366766-eb5c695c-a76a-4d47-89c4-51c03ba3b47f.png)
 
 Here is where you create a recipe. You can only access this page if you are logged in. To create your recipe, you need to first give it a title and then provide the URL of the image you want to appear as the image of your recipe. After that, you write your recipe using markdown language. It needs to be written in this language so that the recipe is displayed in a beautiful HTML format instead of plain text. Finally, you choose which categories your recipe belongs to and create it by clicking on the "create" button.
+
+## Account
+
+![image](https://user-images.githubusercontent.com/118635631/236368450-17b1421a-3c4c-4bae-ad2b-e931b5d628f1.png)
+
+This page shows your account and your recipes. You can delete any recipe or log out of your account.
+
+## Profile
+
+![image](https://user-images.githubusercontent.com/118635631/236368897-c59dd4c6-9c38-43a8-9dbf-57a4a21db4a0.png)
+
+This page looks like the account page, but it's actually how a user views the profile of another user. They can see the account and all the recipes of that user.
+
+## Search
+
+![image](https://user-images.githubusercontent.com/118635631/236369300-40af08a4-1048-4310-b8ef-62a8ca6da7af.png)
+
+This component is responsible for taking the typed recipe and passing it to the "results" page.
+
+## Results
+
+![image](https://user-images.githubusercontent.com/118635631/236369750-55f4f4c7-2834-4524-9524-a7e009294323.png)
+
+This page takes the typed recipe from the URL and searches for corresponding recipes to display. It displays all of them, but in this case, only one was found.
+
+## Discover
+
+### closed
+
+![image](https://user-images.githubusercontent.com/118635631/236370286-2bb62c06-75b6-438f-a93c-2d219a10837b.png)
+
+### open
+
+![image](https://user-images.githubusercontent.com/118635631/236370436-8e1559be-afa5-4f2f-9cd3-e729f61bc8bf.png)
+
+"Discover" is a dropdown menu that displays several categories. When you click on one, you will be taken to the "category" page, which will display recipes from the category you chose.
+
+## Category
+
+![image](https://user-images.githubusercontent.com/118635631/236370806-ff3d23e2-7b32-4841-b39b-0ef17244796f.png)
+
+This page retrieves the category from the URL and displays the recipes that match that category.
+
+# Technologies used
+
+I have built this project using the following technologies:
+
+- React
+- TypeScript
+- NextJS 13
+- Next Auth
+- TailwindCSS
+- Class Variance Authority
+- Clsx
+- GraphQL
+- Apollo Client
+- Prisma
+- Apollo Server
+- Date fns
+- NodeJS
